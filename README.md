@@ -1,6 +1,6 @@
 # DocsPilot
 
-**DocsPilot transforme des fiches techniques de pompes (PDF, Word, Excel) en données structurées, puis permet de les interroger en langage naturel grâce à un agent IA qui cite ses sources.**
+**DocsPilot transforme des fiches techniques (PDF, Word, Excel) en données structurées, puis permet de les interroger en langage naturel grâce à un agent IA qui cite ses sources.**
 
 L'application se fait en deux temps :
 
