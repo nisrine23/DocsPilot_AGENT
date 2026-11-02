@@ -4,8 +4,8 @@
 
 L'application se fait en deux temps :
 
-1. **Extraction** : les documents sont convertis page par page en Markdown. Les pages inutiles (page de garde, sommaire) sont écartées. Ensuite, chaque caractéristique de chaque pompe (débit, hauteur, matériaux, moteur…) est extraite avec la page d'où elle vient, puis enregistrée dans PostgreSQL.
-2. **Interrogation** : un agent répond aux questions (« Quelles pompes ont un corps en inox ? »). Pour cela, il choisit lui-même ses outils : une requête SQL sur les données, une recherche dans le texte des documents ou une consultation du glossaire métier. Chaque réponse montre les requêtes exécutées et les pages utilisées.
+1. **Extraction** : les documents sont convertis page par page en Markdown. Les pages inutiles (page de garde, sommaire) sont écartées. Ensuite, chaque caractéristique de chaque composant (débit, hauteur, matériaux, moteur…) est extraite avec la page d'où elle vient, puis enregistrée dans PostgreSQL.
+2. **Interrogation** : un agent répond aux questions (« Quelles machines ont un corps en inox ? »). Pour cela, il choisit lui-même ses outils : une requête SQL sur les données, une recherche dans le texte des documents ou une consultation du glossaire métier. Chaque réponse montre les requêtes exécutées et les pages utilisées.
 
 Un sélecteur **Avec contexte / Sans contexte** permet de comparer les réponses de l'agent avec ou sans la documentation métier : description des colonnes, règles et glossaire.
 
