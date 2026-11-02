@@ -1,0 +1,37 @@
+# Serveur web
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# Base de données
+psycopg2-binary
+
+# Données et images
+numpy
+pandas
+openpyxl
+tabulate
+pillow
+opencv-python
+
+# Lecture des documents
+pdf2image
+PyPDF2
+python-docx
+docling
+easyocr
+
+# Modèles de langage
+groq
+openai
+google-generativeai
+
+# RAG
+langchain-core
+langchain-community
+chromadb
+sentence-transformers
+
+# Sécurité des requêtes SQL de l'agent
+sqlglot

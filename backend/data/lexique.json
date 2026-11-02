@@ -1,0 +1,415 @@
+{
+  "lexique_technique_pompes": {
+    "Identification": {
+      "Client": [
+        "Client",
+        "Customer",
+        "End User",
+        "Acheteur",
+        "Buyer"
+      ],
+      "pays du Client": [
+        "pays du Client",
+        "Customer's country",
+        "End User country",
+        " pays d'Acheteur",
+        "Buyer's country"
+      ],
+      "Type_de_pompe": [
+        "Type de pompe",
+        "Pump type",
+        "Pump model",
+        "Désignation",
+        "Designation",
+        "Category",
+        "Size & Model",
+        "Size and Model",
+        "Type",
+        "Model"
+      ],
+      "Repere": [
+        "Repère",
+        "Tag Number",
+        "Item Number",
+        "Item No.",
+        "Item No",
+        "Equipment ID",
+        "Identification Number",
+        "N° de repère"
+      ],
+      "Nombre_de_pompe": [
+        "Nombre de pompe",
+        "Quantity",
+        "Qty",
+        "Units required",
+        "Number Required",
+        "Nombre d'unités"
+      ],
+      "Fonction": [
+        "Fonction",
+        "Service",
+        "Duty",
+        "Application",
+        "Usage"
+      ],
+      "Plan_croquis": [
+        "Plan ou croquis",
+        "Drawing",
+        "Sketch",
+        "General Arrangement Drawing",
+        "GA Drawing",
+        "Outline drawing",
+        "Plan d'encombrement"
+      ],
+      "Marque_moteur": ["Marque du moteur", "Motor brand", "Motor manufacturer", "Motor make", "Marque moteur", "Manufacturer", "Manufactured by"]
+    },
+    "Caracteristiques_du_produit": {
+      "Nature_du_produit": [
+        "Nature du produit",
+        "Fluid",
+        "Liquid",
+        "Media",
+        "Pumped liquid",
+        "Nature du fluide"
+      ],
+      "Viscosite": [
+        "Viscosité",
+        "Viscosity",
+        "Dynamic viscosity",
+        "Kinematic viscosity",
+        "cP",
+        "cSt"
+      ],
+      "Densite": [
+        "Densité",
+        "Density",
+        "Specific gravity",
+        "SG",
+        "Masse volumique"
+      ],
+      "Taux_de_solide": [
+        "Taux de solide",
+        "Solids content",
+        "Solid concentration",
+        "Percentage of solids",
+        "Slurry concentration",
+        "% solide"
+      ],
+      "Temperature": [
+        "Température",
+        "Temperature",
+        "Operating temperature",
+        "Design temperature",
+        "T°",
+        "Working temp"
+      ],
+      "Diametre_particules": [
+        "Diamètre des particules",
+        "Particle size",
+        "Max solid size",
+        "Grain size",
+        "Passage granulaire"
+      ]
+    },
+    "Caracteristiques_hydrauliques": {
+      "Debit_nominal": [
+        "Débit nominal",
+        "Rated flow",
+        "Flow rate",
+        "Capacity",
+        "Design flow",
+        "Q",
+        "Normal flow",
+        "Rated Capacity",
+        "Min. Continuous Flow",
+        "Minimum Continuous Flow"
+      ],
+      "Hauteur_manometrique": [
+        "Hauteur manométrique",
+        "Total Dynamic Head",
+        "TDH",
+        "Head",
+        "Differential head",
+        "HMT",
+        "Pression différentielle",
+        "Max. Head @ Rated Impeller",
+        "Rated Head",
+        "Max Head"
+      ],
+      "NPSH_disponible": ["NPSH disponible", "NPSHa", "NPSH available", "NPSH dispo", "Net Positive Suction Head available", "NPSHr", "NPSH required", "NPSH requis"],
+      "Rendement": [
+        "Rendement",
+        "Efficiency",
+        "Pump efficiency",
+        "η",
+        "Eff %",
+        "Rated Efficiency"
+      ]
+    },
+    "Caracteristiques_mecaniques": {
+      "Norme": [
+        "Norme",
+        "Standard",
+        "Design standard",
+        "API 610",
+        "ISO 5199",
+        "ANSI",
+        "DIN"
+      ],
+      "Puissance_moteur": [
+        "Puissance moteur",
+        "Motor power",
+        "Driver rating",
+        "kW",
+        "HP",
+        "P2"
+      ],
+       "Puissance_absorbee": ["Puissance absorbée", "Absorbed power", "Power absorbed", "Rated Power", "Shaft power", "Puissance à l'arbre", "EoC @ rated rpm", "Brake power", "BHP"],
+      "Facteur_de_service": ["Facteur de service", "Service factor", "SF", "Overload capacity", "S.F."],
+      "Tension": [
+        "Tension",
+        "Voltage",
+        "Rated voltage",
+        "V",
+        "kV"
+      ],
+      "Vitesse_rotation": [
+        "Vitesse de rotation",
+        "Rotation speed",
+        "RPM",
+        "Speed",
+        "Vitesse nominale"
+      ],
+      "Sens_rotation": [
+        "Sens de rotation",
+        "Direction of rotation",
+        "Rotation",
+        "CW",
+        "CCW",
+        "Clockwise"
+      ],
+      "Type_entrainement": [
+        "Type d'entrainement",
+        "Drive type",
+        "Coupling",
+        "Direct drive",
+        "V-belt",
+        "Transmission"
+      ],
+      "Etancheite": [
+        "Etanchéité",
+        "Sealing",
+        "Mechanical seal",
+        "Shaft seal",
+        "Garniture mécanique",
+        "Tresse",
+        "Packing"
+      ],
+      "Duree_utilisation": [
+        "Durée d'utilisation",
+        "Service life",
+        "Design life",
+        "L10 life",
+        "Durée de vie"
+      ],
+      "Niveau_de_Bruit": [
+        "Niveau de bruit",
+        "Noise level",
+        "Sound pressure",
+        "dB(A)",
+        "Acoustic level"
+      ],
+      "Brides_aspiration": [
+        "Brides d'aspiration",
+        "Suction flange",
+        "Inlet connection",
+        "Suction size",
+        "DN aspiration"
+      ],
+      "Brides_refoulement": [
+        "Brides de refoulement",
+        "Discharge flange",
+        "Outlet connection",
+        "Discharge size",
+        "DN refoulement"
+      ],
+      "Types_de_Graissage": [
+        "Type de graissage",
+        "Lubrication",
+        "Oil lubricated",
+        "Grease lubricated",
+        "Graissage"
+      ],
+      "Encombrement": [
+        "Encombrement",
+        "Dimensions",
+        "Footprint",
+        "Overall dimensions",
+        "Space requirement"
+      ]
+    },
+    "Materiau": {
+      "Corps_de_la_pompe": [
+        "Corps de la pompe",
+        "Casing",
+        "Pump casing",
+        "Volute",
+        "Housing",
+        "escargot"
+      ],
+      "Impulseur": [
+        "Impulseur",
+        "Impeller",
+        "Rotor",
+        "Wheel"
+      ],
+      "Arbre": [
+        "Arbre",
+        "Shaft",
+        "Pump shaft"
+      ],
+      "Chaise_de_palier": [
+        "Chaise de palier",
+        "Bearing housing",
+        "Bearing frame",
+        "Bracket"
+      ],
+      "Chemise": [
+        "Chemise",
+        "Shaft sleeve",
+        "Sleeve",
+        "Chemise d'arbre"
+      ],
+      "Visserie": [
+        "Visserie",
+        "Bolts",
+        "Fasteners",
+        "Studs",
+        "Bolting",
+        "Visserie en contact"
+      ],
+      "Joint_plat": [
+        "Joint plat",
+        "Gasket",
+        "Flat gasket",
+        "O-ring",
+        "Joint de corps"
+      ],
+      "Plaque_signaletique": [
+        "Plaque signalétique",
+        "Nameplate",
+        "Data plate",
+        "Identification plate"
+      ],
+      "Roulement": [
+        "Roulement",
+        "Bearings",
+        "Ball bearings",
+        "Roller bearings",
+        "Paliers"
+      ]
+    },
+    "Conditions_de_fonctionnement": {
+      "Regime": [
+        "Régime de fonctionnement",
+        "Duty cycle",
+        "Operating mode",
+        "Continuous duty",
+        "Intermittent duty"
+      ],
+      "Duree_par_jour": [
+        "Durée par jour",
+        "Hours per day",
+        "Operating hours",
+        "h/day"
+      ],
+      "Demarrages_par_jour": [
+        "Nombre de démarrage",
+        "Starts per day",
+        "Number of starts",
+        "Start-ups"
+      ],
+      "Environnement": [
+        "Environnement",
+        "Ambient conditions",
+        "Environment",
+        "ATEX",
+        "Outdoor",
+        "Indoor",
+        "Corrosive atmosphere"
+      ]
+    },
+    "Peinture": {
+      "Type_peinture": [
+        "Type de peinture",
+        "Paint type",
+        "Coating system",
+        "Painting specification",
+        "Système de peinture"
+      ],
+      "Details_peinture": [
+        "Détails peinture",
+        "Color",
+        "Thickness",
+        "DFT",
+        "Number of coats",
+        "Épaisseur",
+        "Couleur",
+        "RAL"
+      ]
+    },
+    "Autres": {
+      " Présence de VFD": [
+        "Variateur de vitesse",
+        "speed variator",
+        "VFD",
+        "Variable Frequency Drive"
+      ],
+      " Pompe existante": [
+        "Existing Pump",
+        "Pompe de remplacement",
+        "Pump replacement",
+        "Retrofit pump"
+      ],
+      " Contrainte Vitesse": [
+        "Vitesse limite",
+        "limitation sur vitesse",
+        "Speed constraint",
+        "Maximum speed"
+      ],
+      " Contrainte sur Diamètre": [
+        "Diamètre limite",
+        "limitation sur Diamètre",
+        "Diameter constraint",
+        " Maximum diameter"
+      ],
+      " Gamme Phova demandée": [
+        "Gamme Phova demandée",
+        "Requested Phova range",
+        "Requested Phova series",
+        " Phova range"
+      ],
+      " Marque des Roulements ": [
+        "Marque des roulements",
+        "Bearing brand",
+        "Bearing manufacturer",
+        " Bearing make"
+      ],
+      " Marque de la garniture mécanique ": [
+        "Marque de la garniture mécanique",
+        "Mechanical seal brand",
+        "Mechanical seal manufacturer",
+        "Mechanical seal make"
+      ],
+      " nombre de poles du moteur ": [
+        "nombre de poles du moteur",
+        "number of motor poles"
+      ],
+      " fréquence moteur ": [
+        "fréquence moteur",
+        "motor frequency"
+      ]
+
+    }
+  }
+}

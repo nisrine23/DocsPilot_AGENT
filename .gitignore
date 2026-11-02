@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Fichiers générés par l'application
+backend/chroma_db/
+backend/temp_files/
+
+# Frontend
+node_modules/
+.next/

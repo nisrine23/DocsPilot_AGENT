@@ -1,0 +1,53 @@
+{
+  "inox": {
+    "alias": ["acier inoxydable", "stainless", "stainless steel", "ss", "316", "316l", "304", "304l", "cf8m", "cf3m"],
+    "definition": "Acier inoxydable. Dans les documents on le trouve sous les noms : inox, stainless steel, SS, 304, 304L, 316, 316L, CF8M, CF3M. Le duplex est AUSSI un inox (inox austéno-ferritique).",
+    "colonnes": ["materiau_corps", "materiau_impulseur", "materiau_arbre", "materiau_chemise"],
+    "exemple_sql": "materiau_corps ILIKE ANY (ARRAY['%inox%','%stainless%','%316%','%304%','%duplex%','%CF8M%','%CF3M%','% SS%'])"
+  },
+  "duplex": {
+    "alias": ["super duplex", "1.4462", "1.4469", "2205", "2507", "cd4mcu", "cd4mcun"],
+    "definition": "Acier inoxydable austéno-ferritique, très résistant à la corrosion (2205, 2507, CD4MCuN, 1.4462, 1.4469).",
+    "colonnes": ["materiau_corps", "materiau_impulseur", "materiau_arbre"]
+  },
+  "fonte": {
+    "alias": ["cast iron", "ggg", "gg25", "en-gjl", "en-gjs", "ductile iron", "fonte grise", "fonte ductile"],
+    "definition": "Fonte : grise (GG25, EN-GJL) ou ductile (GGG40, EN-GJS, ductile iron). Les fontes à haut chrome (ex. 'fonte à 30% Cr') sont des fontes anti-usure.",
+    "colonnes": ["materiau_corps", "materiau_impulseur"]
+  },
+  "bronze": {
+    "alias": ["bronze", "cupro", "cuivre", "copper alloy", "nickel aluminium bronze", "nab"],
+    "definition": "Alliages cuivreux : bronze, cupro-aluminium, NAB (nickel aluminium bronze).",
+    "colonnes": ["materiau_impulseur", "materiau_corps"]
+  },
+  "hauteur": {
+    "alias": ["hmt", "tdh", "head", "hauteur manométrique", "hauteur manometrique", "rated head", "differential head"],
+    "definition": "Hauteur manométrique totale. hauteur_m contient le PREMIER nombre (en général la valeur nominale). Pour une hauteur 'maximale' ou 'design', lire hauteur_texte.",
+    "colonnes": ["hauteur_m", "hauteur_texte"]
+  },
+  "debit": {
+    "alias": ["débit", "flow", "capacity", "q", "rated flow", "débit nominal", "debit nominal", "design flow"],
+    "definition": "Débit de la pompe. debit_m3h contient le PREMIER débit du texte (en général le débit normal/nominal). Pour le débit 'design' ou 'maximal', lire debit_texte.",
+    "colonnes": ["debit_m3h", "debit_texte"]
+  },
+  "npsh": {
+    "alias": ["npsha", "npshr", "npsh disponible", "npsh requis", "npsh available", "npsh required"],
+    "definition": "NPSHa = NPSH disponible (installation) ; NPSHr = NPSH requis (pompe). La colonne npsh_texte peut contenir l'un ou l'autre : vérifier le texte avant de conclure.",
+    "colonnes": ["npsh_m", "npsh_texte"]
+  },
+  "puissance": {
+    "alias": ["puissance moteur", "motor power", "puissance absorbée", "puissance absorbee", "absorbed power", "bhp", "kw", "hp"],
+    "definition": "Deux notions différentes : puissance MOTEUR (puissance du moteur installé) et puissance ABSORBÉE (puissance consommée à l'arbre de la pompe, toujours inférieure). 'Puissance' seule désigne en général la puissance moteur.",
+    "colonnes": ["puissance_moteur_kw", "puissance_absorbee_kw"]
+  },
+  "garniture": {
+    "alias": ["garniture mécanique", "garniture mecanique", "mechanical seal", "seal", "étanchéité", "etancheite", "tresse", "packing"],
+    "definition": "Étanchéité de l'arbre : garniture mécanique (mechanical seal) ou tresse (packing).",
+    "colonnes": ["etancheite", "marque_garniture"]
+  },
+  "norme": {
+    "alias": ["api 610", "api610", "iso 5199", "iso 2858", "ansi", "asme b73", "standard"],
+    "definition": "Norme de conception. API 610 = pompes centrifuges pour pétrole/chimie lourde ; ISO 5199 / ISO 2858 = pompes centrifuges process.",
+    "colonnes": ["norme"]
+  }
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ══════════════════════════════════════════════════════════════════════
+   COULEURS DOCSPILOT (reprises du projet DPRO)
+   - navy  #1A2B4A : textes forts, boutons, élément actif
+   - sidebar #0d1b2e : barre latérale sombre
+   - cyan  #4FC3F7 : accent (icônes actives, focus, progression)
+   - rouge #E63946 : erreurs
+   ══════════════════════════════════════════════════════════════════════ */
+:root {
+  --navy: #1a2b4a;
+  --sidebar: #0d1b2e;
+  --cyan: #4fc3f7;
+  --red: #e63946;
+  --background: #f8fafc;   /* fond gris très clair des pages */
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --surface: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #64748b;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter, "Inter"), system-ui, -apple-system, sans-serif;
+  --color-navy: var(--navy);
+  --color-navy-light: #2e4a72;
+  --color-sidebar: var(--sidebar);
+  --color-cyan: var(--cyan);
+  --color-cyan-dark: #0d8dca;
+  --color-danger: var(--red);
+  --radius-lg: 0.625rem;
+}
+/* Taille de base un peu plus petite : toute l'interface est plus compacte */
+html {
+  font-size: 87.5%;   /* 14 px au lieu de 16 px */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Barre de défilement fine, aux couleurs de l'application */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
+
+/* Focus clavier : anneau cyan (accessibilité) */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--sidebar), 0 0 0 4px var(--cyan);
+  border-radius: 6px;
+}
+
+/* Petit retour visuel quand on clique un bouton */
+button { transition: all 150ms ease; }
+button:active:not(:disabled) { transform: scale(0.98); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
